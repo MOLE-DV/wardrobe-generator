@@ -101,7 +101,7 @@ export const Generator = () => {
                         })}
                         {images.length > 0 && !spinning ? <button id="spin" onClick={handleSpin}>Spin</button> : null}
                     </div>
-                    <Importer />
+                    {images.length < 1 ? <Importer /> : null}
                 </div>
             </Context.Provider>
         </div>
